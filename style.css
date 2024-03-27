@@ -1,3 +1,13 @@
+body{
+    font-family: helvetica;
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .container::before{
     content: '';
     background-image: url(img/bg.jpg);
@@ -11,4 +21,10 @@
     left:0;
     opacity: 0.2;
     z-index: -1;
+    }
+    img{
+        width: 100%;
+    }
+    select{
+        width: 300px;
     }
