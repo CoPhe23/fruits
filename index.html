@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data_fruits.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Déli gyümölcsök</h1>
+        <h2>Neked melyik a kedvenced?</h2>
+        <select name="fruits" id="fruits" onclick="sfruit()">
+            <option value="" disabled selected>Válassz egy gyümölcsöt...</option>
+        </select>
+        <div class="fruit"></div>
+    </div>
+
+    <script>
+        fruits.forEach(element => {
+            document.getElementById('fruits').innerHTML += `<option value="${element.id}">${element.name}</option>`
+        });
+        function sfruit() {
+            var selected = document.getElementById("fruits").value;
+            console.log(fruits.find(element.id == selected));
+            document.querySelector('.fruit').innerHTML = fruits.forEach(element => {
+
+            });
+        }
+    </script>
+</body>
+
+</html>
