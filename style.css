@@ -27,4 +27,10 @@ body{
     }
     select{
         width: 300px;
+        margin: 10px;
+    }
+    .fruit{
+        margin: 0 auto;
+        background-color: white;
+        border: 2px solid aliceblue;
     }
